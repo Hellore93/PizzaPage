@@ -1,5 +1,5 @@
 import {select, templates} from '../settings.js';
-import { AmountWidget } from './AmountWidget.js';
+import AmountWidget from './AmountWidget.js';
 
 class Booking{
   constructor(element){
