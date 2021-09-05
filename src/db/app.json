@@ -207,13 +207,13 @@
    "events": [
       {
         "id": 1,
-        "date": "2021-01-01",
+        "date": "2021-09-09",
         "hour": "12:30",
         "table": 1,
         "repeat": false,
         "duration": 4,
         "ppl": 3,
-        "starters": []
+        "starters": ["bread"]
       },
       {
         "id": 2,
@@ -256,5 +256,15 @@
         "starters": ["lemonWater"]
       }
     ],
-    "bookings": []
+    "bookings": [
+      {
+         "id": 1,
+         "date": "2021-09-07",
+         "hour": "12:30",
+         "table": 1,
+         "duration": 4,
+         "ppl": 3,
+         "starters": []
+       }
+    ]
 } 
