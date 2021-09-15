@@ -103,21 +103,21 @@ class Booking {
   updateDOM() {
     const thisBooking = this;
     thisBooking.date = thisBooking.datePicker.value;
-    thisBooking.hour = utils.hourToNumber(thisBooking.datePicker.value);
-    let allAvaliable = false;
+    thisBooking.hour = utils.hourToNumber(thisBooking.hourPicker.value);
+    let allAvailable = false;
     if (
       typeof thisBooking.booked[thisBooking.date] == 'undefined'
       ||
       typeof thisBooking.booked[thisBooking.date][thisBooking.hour] == 'undefined'
     ) {
-      allAvaliable = true;
+      allAvailable = true;
     }
     for (let table of thisBooking.dom.tables) {
       let tableId = table.getAttribute(settings.booking.tableIdAttribute);
       if (!isNaN(tableId)) {
         tableId = parseInt(tableId);
       }
-      if (!allAvaliable && thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId)
+      if (!allAvailable && thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId)
       ) {
         table.classList.add(classNames.booking.tableBooked);
       } else {
