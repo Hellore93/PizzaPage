@@ -41,7 +41,7 @@ class Booking {
       eventsRepeat:   settings.db.url + '/' + settings.db.events
                                       + '?' + params.eventsRepeat.join('&'),
     };
-    console.log('getData urls', urls);
+    // console.log('getData urls', urls);
 
     Promise.all([
       fetch(urls.booking),
@@ -96,7 +96,7 @@ class Booking {
         thisBooking.booked[date][hourBlock] = [];
       }
       thisBooking.booked[date][hourBlock].push(table);
-      console.log(thisBooking.booked);
+      // console.log(thisBooking.booked);
     }
 
   }
@@ -157,7 +157,7 @@ class Booking {
     for (let table of thisBooking.dom.tables) {
       table.addEventListener('click', function (event) {
         event.preventDefault();
-        console.log('click');
+        // console.log('click');
         if (table.classList.contains('booked')) {
           alert('choose a new table, this one is not available');
         } else {
@@ -217,7 +217,7 @@ class Booking {
       .then(function(response){
         return response.json();
       }).then(function(parsedResponse){
-        console.log('parsedResponse', parsedResponse);
+        // console.log('parsedResponse', parsedResponse);
       });
   }
 }

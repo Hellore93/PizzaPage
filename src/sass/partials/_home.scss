@@ -1,0 +1,12 @@
+.two{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 60% 0 10%;
+
+}
+
+
+.left, .right{
+    border: 2px black solid;
+}
