@@ -10,7 +10,7 @@ export const select = {
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
-    home: '.Home',
+    home: '.home-wrapper',
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -40,8 +40,14 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
+    dataFlickity:{
+      wrapper: '.main-carousel',
+      cellAlign: 'left',
+      contain: 'true',
+    },
+    carousel: '.main-carousel',
   },
-  
+
   cart: {
     productList: '.cart__order-summary',
     toggleTrigger: '.cart__summary',
@@ -71,7 +77,9 @@ export const select = {
     links: '.main-nav a',
   },
   home: {
-    upper: '.upper'
+    upper: '.upper',
+    order:'.left',
+    booking:'.right',
   }
 };
 

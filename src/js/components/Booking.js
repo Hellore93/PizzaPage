@@ -137,6 +137,9 @@ class Booking {
     thisBooking.dom.hourPicker = thisBooking.dom.wrapper.querySelector(select.widgets.hourPicker.wrapper);
     thisBooking.dom.tables = thisBooking.dom.wrapper.querySelectorAll(select.booking.tables);
     thisBooking.dom.form = thisBooking.dom.wrapper.querySelector(select.booking.form);
+    thisBooking.dom.address = thisBooking.dom.wrapper.querySelector(select.cart.address);
+    thisBooking.dom.phone = thisBooking.dom.wrapper.querySelector(select.cart.phone);
+    thisBooking.dom.starters = thisBooking.dom.wrapper.querySelectorAll(select.booking.starters);
   }
   initWidget() {
     const thisBooking = this;
@@ -161,7 +164,9 @@ class Booking {
         if (table.classList.contains('booked')) {
           alert('choose a new table, this one is not available');
         } else {
+          // tableIdAttribute
           const tableId = parseInt(table.getAttribute(settings.booking.tableIdAttribute));
+          console.log(tableId);
           thisBooking.selectedTable === tableId;
           if (thisBooking.selectedTable) {
             thisBooking.removeSelected();
@@ -217,7 +222,7 @@ class Booking {
       .then(function(response){
         return response.json();
       }).then(function(parsedResponse){
-        // console.log('parsedResponse', parsedResponse);
+        console.log('parsedResponse', parsedResponse);
       });
   }
 }

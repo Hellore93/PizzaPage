@@ -9,6 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="./vendor/range-slider.min.css">
+  <link rel="stylesheet" href="./vendor/flickity-docs/flickity.css" media="screen">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,8 +64,8 @@
   </header>
 
   <div id="pages">
-    <section id="Home">
-      <div class="Home container"></div>
+    <section id="home">
+      <div class="home-wrapper container"></div>
     </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
@@ -73,6 +74,55 @@
       <div class="booking-wrapper container"></div>
     </section>
   </div>
+
+  <script id="template-home-page" type="text/x-handlebars-template">
+    <div class="home-page">
+      <div class="upper">
+        <div class="two">
+          <div class="left">
+            <a href="#order">
+              <h1>ORDER ONLINE</h1>
+              <p>Sed ut perspiciatis unde omnis</p>
+            </a>
+          </div>
+          <div class="right">
+            <a href="#booking">
+              <h1>BOOK A TABLE</h1>
+              <p>Magni dolores eos qui ratione</p>
+            </a>
+            </div>
+          </div>
+        <div class="onepic">
+          <h1> OPENING HOURS:</h1>
+          <p>TUE-SUN, 12PM-12AM</p>
+        </div>
+      </div>
+
+      <section class="main-carousel">
+        <article class="carousel-cell">
+          <div class="carousel-image">
+            <img src="./../../images/assets/pizza-3.jpg" class="carouselImg"/>
+          </div>
+          <div class="carouselContent">
+            <h1>AMAZING SERVICE!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>-Ozzy Osbourne</p>
+          </div>
+        </article>
+        <article class="carousel-cell">
+          <div class="carousel-image">
+            <img src="./../../images/assets/pizza-3.jpg" class="carouselImg"/>
+          </div>
+          <div class="carouselContent">
+            <h1>AMAZING SERVICE!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>-Kelly Osbourne</p>
+          </div>
+        </article>
+      </section>
+
+
+  </script>
 
   <script id="template-cart-product" type="text/x-handlebars-template">
     <li>
@@ -247,23 +297,10 @@
     </div>
   </script>
 
-  <script id="template-home-page">
-    <div class="home-page">
-      <div class="upper">
-        <div class="two">
-          <div class="left">ORDER ONLINE</div> 
-          <div class="right">BOOK A TABLE</div>
-        </div>
-        <div class="onepic">OPENING HOURS:</div>
-      </div>
-      <div class="carousel">b</div>
-      <div class="gallery">c</div>
-    </div>
-  </script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="./vendor/range-slider.min.js"></script>
+  <script src="./vendor/flickity-docs/flickity.pkgd.min.js"></script>
   <script src="./js/app.js" type="module"></script>
 </body>
 </html>
