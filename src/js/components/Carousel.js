@@ -19,7 +19,7 @@ class Carousel {
  
   initPlugin() {
     // use plugin to create carousel on thisCarousel.element
-    thisCarousel.element=document.querySelector(select.dataFlickity.wrapper);
+    // thisCarousel.element=document.querySelector(select.dataFlickity.wrapper);
   }
 }
 
