@@ -33,13 +33,13 @@
     transform: translateY(-30px);
     transition: 0.5s linear;
   }
+
   h1 {
     transform: translateY(-15px);
     transition: 0.5s linear;
-}}
+  }}
 
 .left, .right, .onepic{
-  border: 2px black solid;
   border-radius: 5px;
   height: 15vh;
   color: antiquewhite;
@@ -68,7 +68,7 @@
 
 .onepic{
   margin: 1% 5%;
-  background-color:$color-main;
+  background-color: $color-main;
   flex-direction: column;
 }
 
@@ -120,17 +120,18 @@ ul{
   list-style: none;
 }
 
-li{
-  color:$color-light;
-  display:inline;
-  visibility: hidden;
-a{
-  text-decoration: none;
+.gallery li{
   color: $color-light;
-  text-decoration: none;
-  display:inline;
-  size: 10px;
-}}
+  display: inline;
+  visibility: hidden;
+
+  a{
+    text-decoration: none;
+    color: $color-light;
+    text-decoration: none;
+    display: inline;
+    size: 10px;
+  }}
 
 .galleryIcon{
   position: absolute;

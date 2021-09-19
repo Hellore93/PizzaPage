@@ -72,6 +72,7 @@ export const select = {
     tables: '.floor-plan .table',
     form: '.booking-form',
     starters: '[name="starter"]',
+    floorPlan: '.floor-plan',
   },
   nav: {
     links: '.main-nav a',
@@ -95,6 +96,9 @@ export const classNames = {
     loading: 'loading',
     tableBooked: 'booked',
     tableSelected: 'selected',
+    // Dodane linie kodu
+    table: 'table',
+    selected: 'selected',
   },
   nav: {
     active: 'active',
@@ -107,7 +111,7 @@ export const classNames = {
 export const settings = {
 
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':80' : ''),
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     products: 'products',
     orders: 'orders',
     bookings: 'bookings',
