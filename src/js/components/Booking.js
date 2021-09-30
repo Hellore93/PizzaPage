@@ -159,6 +159,10 @@ class Booking {
       event.preventDefault();
       thisBooking.initTables(event);
     });
+    thisBooking.dom.form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      thisBooking.sendBooking();
+    });
   }
 
   initTables(event) {
@@ -199,7 +203,7 @@ class Booking {
 
     const thisBooking = this;
 
-    const url = settings.db.url + '/' + settings.db.booking;
+    const url = settings.db.url + '/' + settings.db.bookings;
 
     const payload = {
       date: thisBooking.datePicker.value,
